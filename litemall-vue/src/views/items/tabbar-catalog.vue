@@ -1,9 +1,9 @@
 <template>
   <div class="tab_class">
-    <!-- <div class="tal_class_searchBox">
+    <div class="tal_class_searchBox">
       <van-search placeholder="点击前往搜索"/>
       <div class="tal_class_searchMask" @click="$router.push({ name: 'search' })"></div>
-    </div> -->
+    </div>
 
     <div class="class_tree clearfix">
     <ul class="class_tree_nav">

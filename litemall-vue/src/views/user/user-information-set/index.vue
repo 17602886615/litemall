@@ -67,6 +67,7 @@ export default {
   created() {
     this.getUserInfo();
   },
+
   methods: {
     avatarAfterRead(file) {
       console.log(file);

@@ -1,10 +1,10 @@
 <template>
   <div class="tab_home">
-    <!-- <div class="tal_class_searchBox">
+    <div class="tal_class_searchBox">
       <van-search placeholder="点击前往搜索"
                   @click="$router.push({ name: 'search' })" />
       <div class="tal_class_searchMask"></div>
-    </div> -->
+    </div>
     <van-swipe :autoplay="3000"
                indicator-color="white">
       <van-swipe-item v-for="(banner, index) in shopInfos.banner"
@@ -14,7 +14,7 @@
       </van-swipe-item>
     </van-swipe>
 
-    <!-- <div class="goods-channel">
+    <div class="goods-channel">
       <div class="item"
            @click="changeTabbar(channel)"
            v-for="(channel, index) in shopInfos.channel"
@@ -23,10 +23,10 @@
              background-size="cover" />
         <span>{{channel.name}}</span>
       </div>
-    </div> -->
-     
+    </div>
+
     <van-panel title="优惠券"
-               style=" padding-bottom: 10px;" v-if='shopInfos.couponList.length'>
+               style=" padding-bottom: 10px;">
       <div class="van-coupon-item"
            v-for="(coupon,index) in shopInfos.couponList"
            :key="index"
@@ -49,7 +49,7 @@
       </div>
     </van-panel>
 
-    <!-- <van-panel>
+    <van-panel>
       <van-card :thumb-link="goDetail(grouponGood.id)"
                 v-for="(grouponGood ,index) in shopInfos.grouponList"
                 :key="index"
@@ -80,7 +80,7 @@
           </van-cell>
         </van-cell-group>
       </div>
-    </van-panel> -->
+    </van-panel>
 
     <van-panel>
       <van-grid clickable
@@ -152,7 +152,7 @@
       </div>
     </van-panel>
 
-<!-- <van-panel>
+<van-panel>
       <van-grid clickable
                 :column-num="2">
         <van-grid-item v-for="(topic ,index) in shopInfos.topicList"
@@ -173,7 +173,7 @@
           </van-cell>
         </van-cell-group>
       </div>
-    </van-panel> -->
+    </van-panel>
 
   </div>
 </template>
